@@ -3,10 +3,8 @@ programa
 
      funcao inicio()
     {
-        inteiro x, y
-        inteiro lugar[11][13], ocupado, livre
-        inteiro local[11][13]
-        x = 0
+        inteiro x, y, lugar[11][13], local[11][13]
+        x = 0 
         y = 0
 
         escreva("Assentos livres: \n\n")
@@ -35,7 +33,7 @@ programa
             escreva("Digite uma coluna: ")
             leia(y)
 
-            se(x>=0 e y>=0)
+            se(x>0 e y>0)
             {
                     local[x][y] = 1
 
@@ -48,7 +46,7 @@ programa
 
                  para(inteiro i=1; i<11; i++)
                  {
-                    para(inteiro j=1; j<13; j++)
+                 	para(inteiro j=1; j<13; j++)
                     escreva(lugar[i][j]," ")
                     escreva("\n")
                  }
@@ -65,7 +63,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1448; 
+ * @POSICAO-CURSOR = 1289; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
